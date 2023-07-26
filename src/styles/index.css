@@ -1,6 +1,8 @@
 body {
     max-width: 90%;
-    max-height: 90%;
+}
+
+main {
 }
 
 .header__container {
@@ -8,6 +10,7 @@ body {
     height: 40px;
     padding: 5px 50px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -21,7 +24,7 @@ body {
 
 .new-post__container {
     width: 65%;
-    padding: 10px;
+    padding: 10px 50px;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -29,7 +32,7 @@ body {
 
 .suggestions__container {
     width: 35%;
-    padding: 10px;
+    padding: 10px 50px;
 }
 
 .user__container {
@@ -120,6 +123,30 @@ body {
     color: var(--color-white-fixed);
 }
 
+.posts__container{
+    padding: 10px 50px;
+    width: 60%;
+}
+
+.post__article {
+    margin: 50px 0;
+}
+
+.post__title {
+    margin: 20px 0;
+}
+
+.post__text {
+    margin: 20px 0;
+}
+
+.post-footer__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
 .open-post__button {
     background-color: var(--color-grey-1);
     color: var(--color-white-fixed);
@@ -129,4 +156,36 @@ body {
 
 .open-post__button:focus {
     background-color: var(--color-brand-2);
+}
+
+@media (max-width: 1025px) {
+    body {
+        max-width: 100%;
+    }
+    
+    .heading__container {
+        flex-direction: column;
+    }
+
+    .new-post__container {
+        width: 100%;
+    }
+
+    .suggestions__container {
+        width: 100%;
+    }
+
+    .suggestion__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .suggestion__item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .posts__container {
+        width: 100%;
+    }
 }
