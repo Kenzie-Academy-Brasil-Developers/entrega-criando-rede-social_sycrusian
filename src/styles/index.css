@@ -3,8 +3,13 @@ body {
     max-height: 90%;
 }
 
-header {
+.header__container {
     background-color: var(--color-grey-1);
+    height: 40px;
+    padding: 5px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .heading__container {
@@ -16,10 +21,15 @@ header {
 
 .new-post__container {
     width: 65%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .suggestions__container {
-    width: 30%;
+    width: 35%;
+    padding: 10px;
 }
 
 .user__container {
@@ -37,4 +47,86 @@ header {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.new-post__form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.new-post__title {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid var(--color-grey-4);
+    border-radius: 5px;
+    outline: none;
+}
+
+.new-post__text {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid var(--color-grey-4);
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+}
+
+.new-post__title:focus, .new-post__text:focus {
+    border-color: var(--color-brand-1);
+}
+
+.new-post__button {
+    align-self: end;
+    background-color: var(--color-brand-1);
+    color: var(--color-white-fixed);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.new-post__button:hover {
+    background-color: var(--color-brand-2);
+}
+
+.suggestion__list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.suggestion__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.follow__button {
+    background-color: var(--color-white-fixed);
+    color: var(--color-grey-1);
+    border: 1px solid var(--color-grey-1);
+    padding: 5px 10px;
+}
+
+.follow__button:hover {
+    border-color: var(--color-brand-2);
+    color: var(--color-brand-2);
+}
+
+.follow__button:active {
+    background-color: var(--color-brand-2);
+    border-color: var(--color-brand-2);
+    color: var(--color-white-fixed);
+}
+
+.open-post__button {
+    background-color: var(--color-grey-1);
+    color: var(--color-white-fixed);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.open-post__button:focus {
+    background-color: var(--color-brand-2);
 }

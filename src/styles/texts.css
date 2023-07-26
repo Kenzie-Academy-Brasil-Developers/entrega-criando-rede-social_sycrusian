@@ -26,6 +26,11 @@ html {
     line-height: var(--line-height-small);
 }
 
+.text-2--bold {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-small);
+}
+
 .text-3 {
     font-weight: var(--font-weight-standard);
     font-size: var(--font-size-smaller);
@@ -34,4 +39,8 @@ html {
 
 .grey-2 {
     color: var(--color-grey-2);
+}
+
+.white-fixed {
+    color: var(--color-white-fixed);
 }

@@ -23,9 +23,9 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
+    <header class="header__container">
       <img class="header__img" src="./src/assets/img/logo.svg" alt="" />
-      <p class="text-2">Sair</p>
+      <p class="text-2 white-fixed">Sair</p>
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
@@ -43,13 +43,15 @@
           </div>
 
           <!-- FORM DE CRIAÇÃO DE UM NOVO POST -->
-          <form class="new-post_form">
+          <form class="new-post__form">
             <input
+              class="new-post__title"
               type="text"
               placeholder="Digite o título do post"
               required=""
             />
             <textarea
+              class="new-post__text"
               placeholder="Digite a descrição do post"
               name=""
               id=""
@@ -57,16 +59,16 @@
               rows="10"
               required=""
             ></textarea>
-            <button type="submit">Postar</button>
+            <button class="new-post__button text-2--bold" type="submit">Postar</button>
           </form>
         </section>
 
         <!-- SUGESTÕES PARA SEGUIR -->
         <section class="suggestions__container">
           <h2 class="title-2">Sugestões para você seguir</h2>
-          <ul>
+          <ul class="suggestion__list">
             <!-- SUGESTÃO 1 -->
-            <li>
+            <li class="suggestion__item">
               <div class="user__container">
                 <img class="user__img" src="./src/assets/img/user2.svg" alt="Carlos Lima" />
                 <div class="user__info">
@@ -74,10 +76,10 @@
                   <p class="text-2 grey-2">UX e UI Designer</p>
                 </div>
               </div>
-              <button>Seguir</button>
+              <button class="follow__button text-2--bold">Seguir</button>
             </li>
             <!-- SUGESTÃO 2 -->
-            <li>
+            <li class="suggestion__item">
               <div class="user__container">
                 <img class="user__img" src="./src/assets/img/user3.svg" alt="Rafael Bertoldo" />
                 <div class="user__info">
@@ -85,18 +87,18 @@
                   <p class="text-2 grey-2">Devop's</p>
                 </div>
               </div>
-              <button>Seguir</button>
+              <button class="follow__button text-2--bold">Seguir</button>
             </li>
             <!-- SUGESTÃO 3 -->
-            <li>
+            <li class="suggestion__item">
               <div class="user__container">
                 <img class="user__img" src="./src/assets/img/user4.svg" alt="Júlia Martins" />
                 <div class="user__info">
                   <h2 class="title-2">Júlia Martins</h2>
-                  <p class="text-2 grey-2">Fullstack Engineer</p>
+                  <p class="text-2 grey-2 text-2--bold">Fullstack Engineer</p>
                 </div>
               </div>
-              <button>Seguir</button>
+              <button class="follow__button text-2--bold">Seguir</button>
             </li>
           </ul>
         </section>
@@ -127,7 +129,7 @@
             cavaleiros Jedi, que compõem o lado bom da força.
           </p>
           <div>
-            <button>Abrir Post</button>
+            <button class="open-post__button text-2--bold">Abrir Post</button>
             <div>
               <img
                 src="src/assets/img/heart-gray.svg"
@@ -161,7 +163,7 @@
             conclusão do curso de fevereiro de 2023 a fevereiro de 2025.
           </p>
           <div>
-            <button>Abrir Post</button>
+            <button class="open-post__button text-2--bold">Abrir Post</button>
             <div>
               <img
                 src="src/assets/img/heart-gray.svg"
@@ -197,7 +199,7 @@
             vão para o objeto), e isso tem seu lado bom e ruim.
           </p>
           <div>
-            <button>Abrir Post</button>
+            <button class="open-post__button text-2--bold">Abrir Post</button>
             <div>
               <img
                 src="src/assets/img/heart-gray.svg"
