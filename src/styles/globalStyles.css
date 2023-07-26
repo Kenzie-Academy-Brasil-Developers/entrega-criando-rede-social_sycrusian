@@ -1,0 +1,29 @@
+html {
+    /* COLORS */
+    --color-brand-1: #4263eb;
+    --color-brand-2: #364fc7;
+    --color-grey-0: #0a0c0d;
+    --color-grey-1: #212529;
+    --color-grey-2: #495057;
+    --color-grey-3: #868e96;
+    --color-grey-4: #dee2e6;
+    --color-grey-5: #f8f9fa;
+    --color-grey-opacity-1: #21252980;
+    --color-white-fixed: #ffffff;
+    --color-like: #d7443e;
+
+    /* TEXTS */
+    --font-family-inter: "Inter";
+    --font-weight-bolder: 700;
+    --font-weight-bold: 600;
+    --font-weight-standard: 400;
+    --font-size-larger: 1.75rem;
+    --font-size-large: 1.25rem;
+    --font-size-standard: 1rem;
+    --font-size-small: 0.875rem;
+    --font-size-smaller: 0.75rem;
+    --line-height-larger: 2.5rem;
+    --line-height-large: 1.75rem;
+    --line-height-standard: 1.5rem;
+    --line-height-small: 1rem;
+}

@@ -7,6 +7,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/texts.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
 
     <!-- FONTE -->
@@ -22,26 +24,26 @@
   <body>
     <!-- HEADER -->
     <header>
-      <img src="./src/assets/img/logo.svg" alt="" />
-      <p>Sair</p>
+      <img class="header__img" src="./src/assets/img/logo.svg" alt="" />
+      <p class="text-2">Sair</p>
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
     <main>
       <!-- ÁREA 1 (CRIAÇÃO DE POST E SUGESTÕES)-->
-      <section>
+      <section class="heading__container">
         <!-- CRIAÇÃO DE UM NOVO POST -->
-        <section>
-          <div>
-            <img src="./src/assets/img/user1.svg" alt="Samuel" />
-            <div>
-              <h2>Samuel Leão</h2>
-              <p>Front end Engineer</p>
+        <section class="new-post__container">
+          <div class="user__container">
+            <img class="user__img" src="./src/assets/img/user1.svg" alt="Samuel" />
+            <div class="user__info">
+              <h2 class="title-2">Samuel Leão</h2>
+              <p class="text-2 grey-2">Front end Engineer</p>
             </div>
           </div>
 
           <!-- FORM DE CRIAÇÃO DE UM NOVO POST -->
-          <form>
+          <form class="new-post_form">
             <input
               type="text"
               placeholder="Digite o título do post"
@@ -60,38 +62,38 @@
         </section>
 
         <!-- SUGESTÕES PARA SEGUIR -->
-        <section>
-          <h2>Sugestões para você seguir</h2>
+        <section class="suggestions__container">
+          <h2 class="title-2">Sugestões para você seguir</h2>
           <ul>
             <!-- SUGESTÃO 1 -->
             <li>
-              <div>
-                <img src="./src/assets/img/user2.svg" alt="Carlos Lima" />
-                <div>
-                  <h2>Carlos Lima</h2>
-                  <p>UX e UI Designer</p>
+              <div class="user__container">
+                <img class="user__img" src="./src/assets/img/user2.svg" alt="Carlos Lima" />
+                <div class="user__info">
+                  <h2 class="title-2">Carlos Lima</h2>
+                  <p class="text-2 grey-2">UX e UI Designer</p>
                 </div>
               </div>
               <button>Seguir</button>
             </li>
             <!-- SUGESTÃO 2 -->
             <li>
-              <div>
-                <img src="./src/assets/img/user3.svg" alt="Rafael Bertoldo" />
-                <div>
-                  <h2>Rafael Bertoldo</h2>
-                  <p>Devop's</p>
+              <div class="user__container">
+                <img class="user__img" src="./src/assets/img/user3.svg" alt="Rafael Bertoldo" />
+                <div class="user__info">
+                  <h2 class="title-2">Rafael Bertoldo</h2>
+                  <p class="text-2 grey-2">Devop's</p>
                 </div>
               </div>
               <button>Seguir</button>
             </li>
             <!-- SUGESTÃO 3 -->
             <li>
-              <div>
-                <img src="./src/assets/img/user4.svg" alt="Júlia Martins" />
-                <div>
-                  <h2>Júlia Martins</h2>
-                  <p>Fullstack Engineer</p>
+              <div class="user__container">
+                <img class="user__img" src="./src/assets/img/user4.svg" alt="Júlia Martins" />
+                <div class="user__info">
+                  <h2 class="title-2">Júlia Martins</h2>
+                  <p class="text-2 grey-2">Fullstack Engineer</p>
                 </div>
               </div>
               <button>Seguir</button>
@@ -102,21 +104,21 @@
 
       <!-- ÁREA 2 (LISTAGEM DE POSTS) -->
       <section>
-        <h2>Posts</h2>
+        <h2 class="title-1">Posts</h2>
         <!-- POST 1 -->
         <article>
-          <div>
-            <img src="./src/assets/img/user5.svg" alt="Iris Silva" />
-            <div>
-              <h2>Iris Silva</h2>
-              <p>Front end Engineer</p>
+          <div class="user__container">
+            <img class="user__img" src="./src/assets/img/user5.svg" alt="Iris Silva" />
+            <div class="user__info">
+              <h2 class="title-2">Iris Silva</h2>
+              <p class="text-2 grey-2">Front end Engineer</p>
             </div>
           </div>
-          <h2>
+          <h2 class="title-1">
             Empresa de Tecnologia da Informação abre vagas para programa de
             estágio
           </h2>
-          <p>
+          <p class="text-1">
             A Framework Digital, empresa mineira especializada em Tecnologia da
             Informação, irá iniciar o seu sexto programa de estágio, com o prazo
             de inscrições entre os dias 08 e 28 de agosto. O programa é
@@ -128,7 +130,7 @@
             <button>Abrir Post</button>
             <div>
               <img
-                src="src/assets/img/gray-heart.svg"
+                src="src/assets/img/heart-gray.svg"
                 alt="Empty Heart(Post not liked)"
               />
               <small>25</small>
@@ -138,18 +140,18 @@
 
         <!-- POST 2 -->
         <article>
-          <div>
-            <img src="./src/assets/img/user6.svg" alt="Carla Maria" />
-            <div>
-              <h2>Carla Maria</h2>
-              <p>Back end Engineer</p>
+          <div class="user__container">
+            <img class="user__img" src="./src/assets/img/user6.svg" alt="Carla Maria" />
+            <div class="useR__info">
+              <h2 class="title-2">Carla Maria</h2>
+              <p class="text-2 grey-2">Back end Engineer</p>
             </div>
           </div>
-          <h2>
+          <h2 class="title-1">
             Programa de estágio abre vagas em Segurança da Informação com regime
             remoto
           </h2>
-          <p>
+          <p class="text-1">
             Em Segurança da Informação, as vagas são destinadas às áreas de
             Security Operations Center (SOC), Administração de Dispositivos de
             Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade
@@ -162,7 +164,7 @@
             <button>Abrir Post</button>
             <div>
               <img
-                src="src/assets/img/gray-heart.svg"
+                src="src/assets/img/heart-gray.svg"
                 alt="Empty Heart(Post not liked)"
               />
               <small>19</small>
@@ -172,17 +174,17 @@
 
         <!-- POST 3 -->
         <article>
-          <div>
-            <img src="./src/assets/img/user7.svg" alt="João Carvalho" />
-            <div>
-              <h2>João Carvalho</h2>
-              <p>Devop's</p>
+          <div class="user__container">
+            <img class="user__img" src="./src/assets/img/user7.svg" alt="João Carvalho" />
+            <div class="user__info">
+              <h2 class="title-2">João Carvalho</h2>
+              <p class="text-2 grey-2">Devop's</p>
             </div>
           </div>
-          <h2>
+          <h2 class="title-1">
             O que é programação orientada a objetos e programação funcional
           </h2>
-          <p>
+          <p class="text-1">
             A Programação Funcional é uma orientação focada na programação
             declarativa. Conhecendo mais a programação funcional a partir de
             códigos podemos nos deparar de primeira com o conceito mais central
@@ -198,7 +200,7 @@
             <button>Abrir Post</button>
             <div>
               <img
-                src="src/assets/img/gray-heart.svg"
+                src="src/assets/img/heart-gray.svg"
                 alt="Empty Heart(Post not liked)"
               />
               <small>8</small>
