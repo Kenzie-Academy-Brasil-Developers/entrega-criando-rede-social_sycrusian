@@ -1,18 +1,20 @@
 body {
     max-width: 90%;
-}
-
-main {
+    padding-top: 2.5rem;
 }
 
 .header__container {
     background-color: var(--color-grey-1);
-    height: 40px;
-    padding: 5px 50px;
+    height: 2.5rem;
+    width: 100%;
+    padding: 5px 3.125rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .heading__container {
@@ -24,7 +26,7 @@ main {
 
 .new-post__container {
     width: 65%;
-    padding: 10px 50px;
+    padding: 10px 3.125rem;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -32,7 +34,7 @@ main {
 
 .suggestions__container {
     width: 35%;
-    padding: 10px 50px;
+    padding: 10px 3.125rem;
 }
 
 .user__container {
@@ -92,10 +94,10 @@ main {
 }
 
 .suggestion__list {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .suggestion__item {
@@ -124,27 +126,27 @@ main {
 }
 
 .posts__container{
-    padding: 10px 50px;
+    padding: 10px 3.125rem;
     width: 60%;
 }
 
 .post__article {
-    margin: 50px 0;
+    margin: 3.125rem 0;
 }
 
 .post__title {
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
 
 .post__text {
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
 
 .post-footer__container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .open-post__button {
@@ -156,6 +158,12 @@ main {
 
 .open-post__button:focus {
     background-color: var(--color-brand-2);
+}
+
+@media (min-width: 1026px) {
+    .suggestion__list {
+        overflow-y: auto;
+    }
 }
 
 @media (max-width: 1025px) {
@@ -173,19 +181,32 @@ main {
 
     .suggestions__container {
         width: 100%;
+        overflow-x: auto;
+    }
+
+    .suggestions__container > .title-2 {
+        position: sticky;
+        left: 0;
     }
 
     .suggestion__list {
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     .suggestion__item {
+        min-width: 80%;
         flex-direction: column;
         gap: 5px;
     }
 
     .posts__container {
         width: 100%;
+    }
+
+    .post__text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
