@@ -3,6 +3,10 @@ body {
     padding-top: 2.5rem;
 }
 
+button {
+    cursor: pointer;
+}
+
 .header__container {
     background-color: var(--color-grey-1);
     height: 2.5rem;
@@ -160,6 +164,52 @@ body {
     background-color: var(--color-brand-2);
 }
 
+#dialog__controller {
+    border: none;
+    border-radius: 10px;
+    width: 50rem;
+}
+
+#dialog__controller::backdrop {
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.dialog__container {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button__close {
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+}
+
+.button__close:before, .button__close:after {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    content: ' ';
+    height: 2rem;
+    width: 2px;
+    background-color: #333;
+}
+
+.button__close:before {
+    transform: rotate(45deg);
+}
+
+.button__close:after {
+    transform: rotate(-45deg);
+}
+
 @media (min-width: 1026px) {
     .suggestion__list {
         overflow-y: auto;
@@ -204,9 +254,17 @@ body {
         width: 100%;
     }
 
-    .post__text {
+    .post__text--mobile {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    #dialog__controller {
+        width: 90%;
+    }
+
+    .dialog__container {
+        width: 100%;
     }
 }
