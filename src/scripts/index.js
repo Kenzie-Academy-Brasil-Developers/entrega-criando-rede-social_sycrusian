@@ -29,7 +29,7 @@ function generateDialog(dialog, content) {
     header.appendChild(closeButton);
 
     const text = content.querySelector(".post__text");
-    text.classList.remove("post__text--mobile");
+    text.classList.remove("post__text--shorten");
 
     container.appendChild(header);
     container.appendChild(content.querySelector(".post__title"));

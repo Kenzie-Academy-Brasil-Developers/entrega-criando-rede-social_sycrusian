@@ -146,6 +146,12 @@ button {
     margin: 1.25rem 0;
 }
 
+.post__text--shorten {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .post-footer__container {
     display: flex;
     flex-direction: row;
@@ -252,12 +258,6 @@ button {
 
     .posts__container {
         width: 100%;
-    }
-
-    .post__text--mobile {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     #dialog__controller {
