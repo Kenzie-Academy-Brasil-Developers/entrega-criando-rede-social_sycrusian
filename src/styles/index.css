@@ -118,6 +118,11 @@ button {
     padding: 5px 10px;
 }
 
+.follow__button--pressed {
+    background-color: var(--color-brand-2);
+    color: var(--color-white-fixed);
+}
+
 .follow__button:hover {
     border-color: var(--color-brand-2);
     color: var(--color-brand-2);
@@ -251,7 +256,7 @@ button {
     }
 
     .suggestion__item {
-        min-width: 80%;
+        min-width: 15rem;
         flex-direction: column;
         gap: 5px;
     }
